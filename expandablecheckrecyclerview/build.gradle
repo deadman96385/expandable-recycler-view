@@ -31,14 +31,13 @@ android {
   defaultConfig {
     minSdkVersion 19
     targetSdkVersion 30
-    versionCode 5
-    versionName "1.5"
   }
   buildTypes {
     release {
       minifyEnabled false
     }
   }
+  namespace 'com.thoughtbot.expandablecheckrecyclerview'
 }
 
 dependencies {

@@ -2,7 +2,6 @@ apply plugin: 'com.android.application'
 
 android {
   compileSdkVersion 30
-  buildToolsVersion "28.0.3"
 
   defaultConfig {
     applicationId "com.thoughtbot.expandablerecyclerview.sample"
@@ -20,6 +19,7 @@ android {
       proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
     }
   }
+  namespace 'com.thoughtbot.expandablerecyclerview.sample'
 }
 
 dependencies {
