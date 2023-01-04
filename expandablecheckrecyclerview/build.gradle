@@ -39,6 +39,7 @@ android {
       minifyEnabled false
     }
   }
+  namespace 'com.thoughtbot.expandablecheckrecyclerview'
 }
 
 dependencies {
