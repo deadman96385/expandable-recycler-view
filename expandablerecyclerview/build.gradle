@@ -31,7 +31,7 @@ android {
   defaultConfig {
     minSdkVersion 19
     targetSdkVersion 30
-    versionName "1.7"
+    versionName "1.8"
   }
   buildTypes {
     release {
