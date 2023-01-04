@@ -26,7 +26,7 @@ import java.util.List;
 import static android.view.LayoutInflater.from;
 
 public class MultiTypeCheckGenreAdapter
-    extends MultiTypeExpandableRecyclerViewAdapter<GenreViewHolder, ChildViewHolder, Genre>
+    extends MultiTypeExpandableRecyclerViewAdapter<GenreViewHolder, ChildViewHolder>
     implements OnChildCheckChangedListener, OnChildrenCheckStateChangedListener {
 
   private static final String CHECKED_STATE_MAP = "child_check_controller_checked_state_map";
@@ -143,10 +143,5 @@ public class MultiTypeCheckGenreAdapter
     } else {
       return ARTIST_VIEW_TYPE;
     }
-  }
-
-  @Override
-  public void onGroupItemClick(Genre group, int flatPos) {
-
   }
 }

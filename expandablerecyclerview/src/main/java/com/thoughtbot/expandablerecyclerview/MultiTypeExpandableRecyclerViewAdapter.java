@@ -11,8 +11,8 @@ import com.thoughtbot.expandablerecyclerview.viewholders.ChildViewHolder;
 import com.thoughtbot.expandablerecyclerview.viewholders.GroupViewHolder;
 import java.util.List;
 
-public abstract class MultiTypeExpandableRecyclerViewAdapter<GVH extends GroupViewHolder, CVH extends ChildViewHolder, O>
-        extends ExpandableRecyclerViewAdapter<GVH, CVH, O> {
+public abstract class MultiTypeExpandableRecyclerViewAdapter<GVH extends GroupViewHolder, CVH extends ChildViewHolder>
+        extends ExpandableRecyclerViewAdapter<GVH, CVH> {
 
   public MultiTypeExpandableRecyclerViewAdapter(List<? extends ExpandableGroup> groups) {
     super(groups);

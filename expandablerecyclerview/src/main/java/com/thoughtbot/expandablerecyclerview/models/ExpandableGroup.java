@@ -25,10 +25,6 @@ public class ExpandableGroup<T extends Parcelable> implements Parcelable {
     return items;
   }
 
-  public void setItems(List<T> items) {
-    this.items = items;
-  }
-
   public int getItemCount() {
     return items == null ? 0 : items.size();
   }

@@ -11,7 +11,7 @@ import com.thoughtbot.expandablerecyclerview.sample.R;
 import com.thoughtbot.expandablerecyclerview.ExpandableRecyclerViewAdapter;
 import java.util.List;
 
-public class GenreAdapter extends ExpandableRecyclerViewAdapter<GenreViewHolder, ArtistViewHolder, Genre> {
+public class GenreAdapter extends ExpandableRecyclerViewAdapter<GenreViewHolder, ArtistViewHolder> {
 
   public GenreAdapter(List<? extends ExpandableGroup> groups) {
     super(groups);
@@ -44,10 +44,5 @@ public class GenreAdapter extends ExpandableRecyclerViewAdapter<GenreViewHolder,
       ExpandableGroup group) {
 
     holder.setGenreTitle(group);
-  }
-
-  @Override
-  public void onGroupItemClick(Genre group, int flatPos) {
-
   }
 }
